@@ -1,7 +1,23 @@
 ﻿
-double[] Tab = new double[6];
+class Program
+{
+    static void Main()
+    {
+        int[] T = { 1, 2, 3, 4, 5 };
 
-for (int i = 0; i < Tab.Length; i++)
-    Tab[i] = i*0.5;
+        ResetTab(T);
 
-foreach (double tableau in Tab) Console.WriteLine(tableau);
+        foreach (int value in T)
+        {
+            Console.Write(value + " ");
+        }
+    }
+
+    static void ResetTab(int[] T)
+    {
+        for (int i = 0; i < T.Length; i++)
+        {
+            T[i] = 0;
+        }
+    }
+}
