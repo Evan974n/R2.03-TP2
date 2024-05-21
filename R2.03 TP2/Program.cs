@@ -7,9 +7,9 @@ class Program
 
         ResetTab(T);
 
-        foreach (int value in T)
+        foreach (int res in T)
         {
-            Console.Write(value + " ");
+            Console.Write(res + " ");
         }
     }
 
